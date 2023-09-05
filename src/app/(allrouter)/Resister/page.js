@@ -1,5 +1,6 @@
 import React from 'react';
 import { Inter, Roboto_Mono } from 'next/font/google';
+import { redirect } from 'next/navigation';
 
 // Load fonts and assign them to constants
 const inter = Inter({
@@ -12,6 +13,7 @@ const roboto_mono = Roboto_Mono({
   display: 'swap',
 });
 
+redirect("/")
 const Page = () => {
   return (
     <div className={roboto_mono.className}>
